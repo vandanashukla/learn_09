@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Learn C++</title>
+<meta charset="ansi">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.5.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Molengo_400.font.js"></script>
+<script type="text/javascript" src="js/Expletus_Sans_400.font.js"></script>
+ <script language="javascript">
+
+        //Start JavaScript Function
+
+        function verify_name() {
+
+            //for field must take some input
+
+            if (document.form2.name.value == "") {
+                alert("Please give the name");
+                document.form1.name.focus();
+                return false;
+            }
+		}
+		
+		function verify_email() {
+            //for field must take some input
+
+            if (document.form2.email.value == "") {
+                alert("Please give the email");
+                return false;
+            }
+		}
+		
+		function verify_gender() { 
+
+            // Gender must be selected
+
+            if (document.form2.type[0].checked == false &&
+                    document.form2.type[1].checked == false) {
+                alert("Please select gender");
+                document.form2.type.focus();
+                return false;
+            }
+		}
+		
+		function verify_pas(){
+
+            //field must take some input
+
+            if (document.form2.pass.value == "") {
+                alert("Please give Password");
+                document.form2.pass.focus();
+                return false;
+            }
+		}
+		
+		function verify_rpass(){
+            // for field must take some input
+
+            if (document.form2.r_pass.value == "") {
+                alert("Please retype your password");
+                document.form2.r_pass.focus();
+                return false;
+            }
+
+            //password and confirm password must matched
+
+            if ((document.form2.pass.value) != (document.form2.r_pass.value)) {
+                alert("Your password does not match");
+                document.form2.r_pass.value == "";
+                document.form2.r_pass.focus();
+                return false;
+            }
+            return( true );
+        }
+    </script>
+
+</head>
+<body id="page4">
+<div class="body1">
+  <div class="main">
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+        <nav>
+          <ul id="menu">
+			<li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="t1.html">Tutorials</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <!--<li><a href="admissions.html">Admissions</a></li>-->
+            <!--<li class="end"><a href="contacts.html">Contact us</a></li>-->
+          </ul>
+        </nav>
+       
+      </div>
+      <div class="wrapper">
+        <h1><a href="index.html" id="logo1">Learn C++</a></h1>
+      </div>
+      <!--<div id="slogan"> Open The World<span>of knowledge for you!</span> </div>-->
+     <!-- <ul class="banners">
+        <li><a href="#"><img src="images/banner1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/banner2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/banner3.jpg" alt=""></a></li>
+      </ul>-->
+    </header>
+    <!-- / header -->
+  </div>
+</div>
+
+<div class="body2">
+  <div class="main">
+    <!-- content -->
+    <section id="content">
+      <div class="box1">
+        <div class="wrapper">
+          <article class="col1">
+            <div class="pad_left1">
+              <h2>Registration Form</h2>
+			  
+              <form name="form2" id="ContactForm" action="http://localhost/learn cpp/register.php" method="post">
+			  <table >
+				<tr>
+                <td><div class="wrapper"> <strong>Name:</strong></div></td>
+                <td><div class="bg"><input type="text" class="input" name="name"></div></td>
+                </tr>
+				<tr>
+				<td><div class="wrapper"> <strong>DOB</strong></div></td>
+                <td><div class="bg"><input type="date"  class="input" name="dob" onClick= "verify_name()"></div></td>
+                </tr>
+				<tr>
+				<td><div class="wrapper"><strong>You are a:</strong></div></td>
+                <td>    
+                <input type="radio"  name="type" value="male" >boy
+			    <input type="radio"  name="type" value="female" >girl
+                </td>   
+                </tr>
+				<tr>
+                <td><div class="wrapper"><strong>Email:</strong></div></td>
+                <td><div class="bg"><input type="email" class="input" class="input" name="email" onClick="verify_gender()"></div></td>
+                </tr>  
+				<tr>
+                <td><div class="wrapper"><strong>Password:</strong></div></td>
+                <td><div class="bg"><input type="password" class="input" name="pass" onClick="verify_email()" ></div></td>
+				<tr>
+                <td><div class="wrapper"><strong>Retype Password:</strong></div></td>
+                <td><div class="bg"><input type="password" class="input" name="r_pass" onClick="verify_pas()"></div></td>
+                </tr> 
+                </table>  
+                  <input type="reset" value="cancel" class="button">&nbsp 
+				  <input type="submit"  value="submit" class="button" > </div>
+              </form>
+            </div>
+          </article>
+		
+</section>
+<div> Already a user? <a href="login.html">Sign in</a> here.</div>
+</div>
+</div>
+<script type="text/javascript">Cufon.now();</script>
+</body>
+</html>

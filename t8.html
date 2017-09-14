@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Learn C++</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.5.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Molengo_400.font.js"></script>
+<script type="text/javascript" src="js/Expletus_Sans_400.font.js"></script>
+
+</head>
+<body id="page4" >
+<div class="body1">
+  <div class="main">
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+			<nav>
+          <ul id="menu">
+			<li><a href="index2.html">Home</a></li>
+            <li><a href="about2.html">About</a></li>
+            <li><a href="t1.html">Tutorials</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            
+          </ul>
+        </nav>
+        <ul id="menu1">
+          <li><a href="logout.php">LOGOUT</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <h1><a href="index2.html" id="logo1">Learn C++</a></h1>
+      </div>
+				
+
+
+
+
+	  </div>
+	</header>
+  </div>
+</div>
+
+<div class="body2">
+<div class="main">
+	<section id="content">
+		<div class="box1">
+		<div class="wrapper">
+		<div class="col2">
+		<div class="pad_left1">
+			<ul class="nav nav-list primary left-menu">
+<li class="heading">C++ Basics</li>
+<li><a target="_top" href="t1.html">C++ Home</a></li>
+<li><a target="_top" href="t2.html">C++ Overview</a></li>
+<li><a target="_top" href="t3.html">C++ Environment Setup</a></li>
+<li><a target="_top" href="t4.html">C++ Basic Syntax</a></li>
+<li><a target="_top" href="t5.html">C++ Comments</a></li>
+<li><a target="_top" href="t6.html">C++ Data Types</a></li>
+<li><a target="_top" href="t7.html">C++  Variable Types</a></li>
+<li><a target="_top" href="t8.html">C++  Variable Scope</a></li>
+<li><a target="_top" href="t9.html">C++ Constants/Literals</a></li>
+<li><a target="_top" href="t10.html">C++ Modifier Types</a></li>
+<li><a target="_top" href="t11.html">C++ Storage Classes</a></li>
+<li><a target="_top" href="t12.html">C++ Operators</a></li>
+<li><a target="_top" href="t13.html">C++ Loop Types</a></li>
+<li><a target="_top" href="t14.html">C++ Decision Making </a></li>
+<li><a target="_top" href="t15.html">C++ Functions</a></li>
+<li><a target="_top" href="t16.html">C++ Numbers</a></li>
+<li><a target="_top" href="t17.html">C++ Arrays</a></li>
+<li><a target="_top" href="t18.html">C++ Strings</a></li>
+<li><a target="_top" href="t19.html">C++ Pointers</a></li>
+<li><a target="_top" href="t20.html">C++ References</a></li>
+<li><a target="_top" href="t21.html">C++ Date &amp; Time</a></li>
+<li><a target="_top" href="t22.html">C++ Basic Input/Output</a></li>
+<li><a target="_top" href="t23.html">C++ Data Structures</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">C++ Object Oriented</li>
+<li><a href="t24.html">C++ Classes &amp; Objects</a></li>
+<li><a href="t25.html">C++ Inheritance</a></li>
+<li><a href="t26.html">C++ Overloading</a></li>
+<li><a href="t27.html">C++ Polymorphism</a></li>
+<li><a href="t28.html">C++ Abstraction</a></li>
+<li><a href="t29.html">C++ Encapsulation</a></li>
+<li><a href="t30.html">C++ Interfaces</a></li>
+</ul>
+<ul class="nav nav-list primary left-menu">
+<li class="heading">C++ Advanced</li>
+<li><a href="t31.html">C++ Files and Streams</a></li>
+<li><a href="t32.html">C++ Exception Handling</a></li>
+<li><a href="t33.html">C++ Dynamic Memory</a></li>
+<li><a href="t34.html">C++ Namespaces</a></li>
+<li><a href="t35.html">C++ Templates</a></li>
+<li><a href="t36.html">C++ Preprocessor</a></li>
+<li><a href="t37.html">C++ Signal Handling</a></li>
+<li><a href="t38.html">C++ Multithreading</a></li>
+<li><a href="t39.html">C++ Web Programming</a></li>
+</ul>
+		</div>
+		</div>
+		<article class="col1">
+		<div class="pad_left1">
+		<h2>Variable Scope in C++</h2>
+		<p>A scope is a region of the program and broadly speaking there are three places, where variables can be declared &minus;</p>
+<ul class="list" id="w">
+<li><p>Inside a function or a block which is called local variables,</p></li>
+<li><p>In the definition of function parameters which is called formal parameters.</p></li>
+<li><p>Outside of all functions which is called global variables.</p></li>
+</ul>
+<p>We will learn what is a function and it's parameter in subsequent chapters. Here let us explain what are local and global variables.</p>
+<h2>Local Variables</h2>
+<p>Variables that are declared inside a function or block are local variables. They can be used only by statements that are inside that function or block of code. Local variables are not known to functions outside their own. Following is the example using local variables:</p>
+<pre >
+#include &lt;iostream&gt;
+using namespace std;
+ 
+int main () {
+   // Local variable declaration:
+   int a, b;
+   int c;
+ 
+   // actual initialization
+   a = 10;
+   b = 20;
+   c = a + b;
+ 
+   cout &lt;&lt; c;
+ 
+   return 0;
+}
+</pre>
+<h3>Output</h3>
+<pre >
+30
+</pre>
+<h2>Global Variables</h2>
+<p>Global variables are defined outside of all the functions, usually on top of the program. The global variables will hold their value throughout the life-time of your program.</p>
+<p>A global variable can be accessed by any function. That is, a global variable is available for use throughout your entire program after its declaration. Following is the example using global and local variables:</p>
+<pre >
+#include &lt;iostream&gt;
+using namespace std;
+ 
+// Global variable declaration:
+int g;
+ 
+int main () {
+   // Local variable declaration:
+   int a, b;
+ 
+   // actual initialization
+   a = 10;
+   b = 20;
+   g = a + b;
+ 
+   cout &lt;&lt; g;
+ 
+   return 0;
+}
+</pre>
+<h3>Output</h3>
+<pre class="result notranslate">
+30
+</pre>
+<p>A program can have same name for local and global variables but value of local variable inside a function will take preference. For example:</p>
+<pre class="prettyprint notranslate tryit">
+#include &lt;iostream&gt;
+using namespace std;
+ 
+// Global variable declaration:
+int g = 20;
+ 
+int main () {
+   // Local variable declaration:
+   int g = 10;
+ 
+   cout &lt;&lt; g;
+ 
+   return 0;
+}
+</pre>
+<p>When the above code is compiled and executed, it produces the following result:</p>
+<pre >
+10
+</pre>
+<h2>Initializing Local and Global Variables</h2>
+<p>When a local variable is defined, it is not initialized by the system, you must initialize it yourself. Global variables are initialized automatically by the system when you define them as follows:</p>
+<table class="table table-bordered">
+<tr>
+<th width="30%">Data Type</th><th>Initializer</th></tr>
+<tr><td>   int     </td><td>  0    </td> </tr>
+<tr><td>   char    </td><td>  '\0' </td> </tr>
+<tr><td>   float   </td><td>  0    </td> </tr>
+<tr><td>   double   </td><td>  0    </td> </tr>
+<tr><td>   pointer </td><td>  NULL </td> </tr>
+</table>
+<p>It is a good programming practice to initialize variables properly, otherwise sometimes program would produce unexpected result.</p>
+<hr />
+
+<div class="pre-btn">
+<a href="t7.html"><i class="icon icon-arrow-circle-o-left big-font"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="t9.html"><i class="icon icon-arrow-circle-o-right big-font"></i>Next Page</a>
+</div>
+		</div>
+		</article>
+		</div>
+		</div>
+		
+		
+	</section>
+</div>
+</div>
+</body>
